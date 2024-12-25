@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form Container */
+.add-form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+
+/* Wrap Input */
+.wrap-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+input[type="text"], select, input[type="file"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, select:focus, input[type="file"]:focus {
+    border-color: #007bff;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b6c83;
+}
+
+/* Cancel Link */
+a {
+    color: #ff6347;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-form-container {
+        width: 90%;
+    }
+
+    .input-group {
+        gap: 12px;
+    }
+
+    label, input[type="text"], select {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 14px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    label, input[type="text"], select, button {
+        font-size: 14px;
+    }
+
+    .input-group {
+        gap: 10px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+}
